@@ -1,29 +1,60 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #464040;
+    color: #e64b4b;
 }
+
+/* Styles for the header */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #510f0f;
+    color: rgb(96, 47, 47);
     text-align: center;
     padding: 1rem;
 }
+
+.header-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Styles for the container */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-img {
+
+/* Styles for images and media */
+img, audio, video {
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-audio, video {
-    max-width: 100%;
-    border-radius: 8px;
+
+/* Styles for headings and text */
+h1, h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #bebe3b;
+}
+
+h2 {
+    color: #000000;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
