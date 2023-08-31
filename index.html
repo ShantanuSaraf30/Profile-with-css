@@ -3,62 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >My Profile</title>
-    <style>
-        body {
-            font-family: 'Helvetica', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #464040;
-            color: #e64b4b;
-        }
-        header {
-            background-color: #510f0f;
-            color: rgb(96, 47, 47);
-            text-align: center;
-            padding: 1rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        audio, video {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1
-        {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #bebe3b; 
-        }
-        
-        h2 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #000000;
-        }
-        p {
-            line-height: 1.6;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS File -->
 </head>
 <body>
     <header>
-        <h1 style="font-weight: bold; letter-spacing: 2px;">My Profile</h1>
+        <h1 class="header-title">My Profile</h1>
     </header>
     <div class="container">
         <section>
@@ -83,7 +33,7 @@
         </section>
         <section>
             <h2>Photograph</h2>
-            <img src="me.jpg" alt="Profile Photograph">
+            <img class="profile-image" src="me.jpg" alt="Profile Photograph">
         </section>
         <section>
             <h2>Introduction Audio</h2>
