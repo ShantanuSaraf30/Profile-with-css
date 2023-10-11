@@ -1,3 +1,4 @@
+/* Universal Selector */
 body {
     font-family: 'Helvetica', Arial, sans-serif;
     margin: 0;
@@ -6,7 +7,7 @@ body {
     color: #e64b4b;
 }
 
-/* Styles for the header */
+/* Type Selector */
 header {
     background-color: #510f0f;
     color: rgb(96, 47, 47);
@@ -14,12 +15,13 @@ header {
     padding: 1rem;
 }
 
+/* Class Selector  */
 .header-title {
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-/* Styles for the container */
+/* Class Selector */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -29,32 +31,64 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for images and media */
+/* Element Selector */
 img, audio, video {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styles for headings and text */
+/* Element Selector  */
 h1, h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Type Selector  */
 h1 {
     color: #bebe3b;
 }
 
+/* Type Selector */
 h2 {
     color: #000000;
 }
 
+/* Type Selector */
 p {
     line-height: 1.6;
 }
 
-/* List styling */
+/* Type Selector  */
 ul {
     list-style-type: disc;
     padding-left: 20px;
+}
+
+/* Pseudo-Class  */
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+
+button:active {
+    background-color: #008000;
+    color: #fff;
+}
+
+
+input:focus {
+    border: 2px solid #0000ff;
+    outline: none;
+}
+
+
+section::before {
+    content: "Section: ";
+    font-weight: bold;
+}
+
+section::after {
+    content: " (End)";
+    font-weight: bold;
 }
